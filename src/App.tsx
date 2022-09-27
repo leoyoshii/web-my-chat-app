@@ -1,7 +1,10 @@
 import {useState} from 'react'
+import {injectGlobalStyles} from './styles/stitches.config'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  injectGlobalStyles()
 
   return (
     <div>
